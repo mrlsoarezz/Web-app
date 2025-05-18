@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href='<LINK_TO_DOWNLOADED_FONT_CSS>' rel='stylesheet'>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-weight: 100;
+        }
+
+        .Search {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            border: 5px solid black;
+            height: 20vh;
+        }
+
+        .Search > input {
+            height: 40px;
+            width: 300px;
+            outline: 0px;
+            font-size: 17.5px;
+        }
+
+        .Search > button {
+            width: 40px;
+            height: 40px;
+        }
+
+        .Search > button:hover {
+            cursor: pointer;
+        }
+
+        .Display-Info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            border: 5px solid black;
+        }
+
+        .Display-Info > h3 {
+            font-size: 70px;
+        }
+
+        .Display-Info .Container {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 20% 40% 40%;
+            width: 50vw;
+            height: 50vh;
+            border: 5px solid black;
+        }
+
+        .Display-Info .Container > * {
+            padding: 5px;
+            border: 1px solid red;
+        }
+
+        .Display-Info .Container .Image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-row: 1/5;
+        }
+        .Display-Info .Title {
+            display: flex;
+        }
+        .Display-Info .Container > * {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .Display-Info .Container .Image img {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class = "Search">
+        <input type = "text">
+        <button><img width = "100%"src = "img/search.png"></button>
+    </div>
+    <div class = "Display-Info">
+       
+    </div>
+    <script src = "script.js"></script>
+</body>
+</html>
